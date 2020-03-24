@@ -42,7 +42,7 @@ class ResourceForm extends Component {
           autoComplete='off'
         >
           <label htmlFor='name'>Name</label>
-          <input name='name' type='text' value={name} onChange={this.handleChange}/>
+          <input name='name' type='text' value={name} onChange={this.handleChange} required/>
           <label htmlFor='website'>Website</label>
           <input name='website' type='text' value={website} onChange={this.handleChange}/>
           <label htmlFor='street'>Street</label>
@@ -58,7 +58,7 @@ class ResourceForm extends Component {
           <label htmlFor='notes'>Notes</label>
           <input name='notes' type='text' value={notes} onChange={this.handleChange}/>
           <label htmlFor='category'>Category</label>
-          <input name='category' type='text' value={category} onChange={this.handleChange}/>
+          <input name='category' type='text' value={category} onChange={this.handleChange} required/>
           <label htmlFor='subcategory'>Subcategory</label>
           <input name='subcategory' type='text' value={subcategory} onChange={this.handleChange}/>
         </form>
