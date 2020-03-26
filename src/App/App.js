@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import ResourceForm from '../ResourceForm/ResourceForm'
+import ResourceForm from '../ResourceForm/ResourceForm';
 
-function App() {
-  return (
-    <div className="App">
-      <ResourceForm />
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return (
+      <div className='App'>
+        <ResourceForm />
+        {/* <ResoueceList /> */}
+      </div>
+    );
+  }
 }
-
 export default App;
