@@ -52,7 +52,7 @@ class ResourceForm extends Component {
             <div className="flex-row">
               <div className="input-container">
                 <input name='phoneNumber' type='tel' value={phoneNumber} onChange={this.handleChange} required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
-                <label htmlFor='phoneNumber' >Phone Number</label>
+                <label htmlFor='phoneNumber' >Phone Number XXX-XXX-XXXX</label>
               </div>
             </div>
           </div>
@@ -67,12 +67,10 @@ class ResourceForm extends Component {
               <label htmlFor='city' className="city">City</label>
             </div>
             <div className="input-container">
-
               <input name='state' type='text' className="input-state" value={state} onChange={this.handleChange} required/>
               <label htmlFor='state'>State</label>
             </div>
             <div className="input-container">
-
               <input name='zipCode' type='text' className="input-zip" value={zipCode} onChange={this.handleChange} required/>
               <label htmlFor='zipCode'>Zip Code</label>
             </div>

@@ -24,14 +24,16 @@
 
 .form-bottom {
   grid-area:bottom;
+  width:98vw;
+  padding:0 40px 0 15px;
 }
 
-.flex-column {
+/* .flex-column {
   display:flex;
   flex-direction: column;
   align-items: space-between;
   justify-content: center;
-}
+} */
 
 .flex-row {
   display:flex;
@@ -56,7 +58,6 @@ input {
 
 form input,
 form textarea {
-  width: 100%;
   border: 2px solid gray; 
   background: none;
   position: relative;
@@ -103,10 +104,10 @@ form textarea {
   resize: vertical;
 }
 
-form.go-bottom input,
+/* form.go-bottom input,
 form.go-bottom textarea {
   padding: 12px 12px 12px 12px; 
-}
+} */
 
 form.go-bottom label {
   top: 0;
@@ -123,38 +124,24 @@ form.go-bottom textarea:focus + label {
   top: 100%;
   margin-top: -16px;
 }
-
-
-
-/*
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-*/
-
-
-
-
-/* input::placeholder {
-  color:#b15013;
-} */
-
-
-
-.input-street{
-  width: 37vw;
+.city-state-zip{
+  padding-top:20px;
 }
-.input-city{
-  width:18vw;
+.input-street {
+  width:100%
 }
-.input-state{
-  width: 7vw;
+
+.input-city,
+.input-zip {
+  width:100%
 }
-.input-zip{
-  width:10vw;
+
+.input-state {
+  width: 5em;
 }
 
 .input-notes {
-  height:3em;
+  width: 100%;
+  overflow: hidden;
+  height:5em;
 }
