@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wbp-admin-site/static/css/main.fc112d39.chunk.css",
-    "main.js": "/wbp-admin-site/static/js/main.d84fb1e9.chunk.js",
-    "main.js.map": "/wbp-admin-site/static/js/main.d84fb1e9.chunk.js.map",
+    "main.js": "/wbp-admin-site/static/js/main.5aaf9bc5.chunk.js",
+    "main.js.map": "/wbp-admin-site/static/js/main.5aaf9bc5.chunk.js.map",
     "runtime-main.js": "/wbp-admin-site/static/js/runtime-main.fd4744aa.js",
     "runtime-main.js.map": "/wbp-admin-site/static/js/runtime-main.fd4744aa.js.map",
     "static/js/2.d930f2e6.chunk.js": "/wbp-admin-site/static/js/2.d930f2e6.chunk.js",
     "static/js/2.d930f2e6.chunk.js.map": "/wbp-admin-site/static/js/2.d930f2e6.chunk.js.map",
     "index.html": "/wbp-admin-site/index.html",
-    "precache-manifest.86e1ce3ef93b54791e4323144f7441ff.js": "/wbp-admin-site/precache-manifest.86e1ce3ef93b54791e4323144f7441ff.js",
+    "precache-manifest.bcc76d81c85019a4a7bd634d40507ce4.js": "/wbp-admin-site/precache-manifest.bcc76d81c85019a4a7bd634d40507ce4.js",
     "service-worker.js": "/wbp-admin-site/service-worker.js",
     "static/css/main.fc112d39.chunk.css.map": "/wbp-admin-site/static/css/main.fc112d39.chunk.css.map",
     "static/js/2.d930f2e6.chunk.js.LICENSE.txt": "/wbp-admin-site/static/js/2.d930f2e6.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.fd4744aa.js",
     "static/js/2.d930f2e6.chunk.js",
     "static/css/main.fc112d39.chunk.css",
-    "static/js/main.d84fb1e9.chunk.js"
+    "static/js/main.5aaf9bc5.chunk.js"
   ]
 }
