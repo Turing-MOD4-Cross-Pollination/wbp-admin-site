@@ -5,13 +5,14 @@ import ResourceForm from '../ResourceForm/ResourceForm';
 import ResourceItem from '../ResourceItem/ResourceItem';
 import header_logo from '../images/header_logo.svg'
 import plus from "../images/plus.png"
+import results from '../Utils/data'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       resources: [],
-      isMenuOpen:true
+      isMenuOpen:false
     };
   }
 
@@ -21,10 +22,13 @@ class App extends Component {
 
   getDataWithConnection = async () => {
     let response = await getAllData();
+    let resources = []
     if (response === undefined) {
-      response = []
+      resources = results.data.resources
+    } else {
+     resources = response.data.resources
     }
-    this.setState({ resources: response });
+    this.setState({ resources });
   };
 
   toggleIsMenuOpen () {
