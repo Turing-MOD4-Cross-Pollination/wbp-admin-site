@@ -42,7 +42,7 @@ class App extends Component {
     let {resources, isMenuOpen} = this.state
     let resourceItemsList = []
     if (resources.length!==0){
-      resourceItemsList = resources.map(el => <ResourceItem resourse={el}/>)
+      resourceItemsList = resources.map(el => <ResourceItem resource={el}/>)
     }
     let menuClass = this.state.isMenuOpen ? 'menu-toggle-open':'menu-toggle' 
 
@@ -58,11 +58,31 @@ class App extends Component {
         <div className="image-container">
           <img src={plus} alt="menu toggle button" className={menuClass} onClick={()=>{this.toggleIsMenuOpen()}}/>
         </div>
-          <div>
+          <div className="resource-form">
             {isMenuOpen && <ResourceForm />}
           </div>
         </div>
-        {resourceItemsList}
+        <container className="container-table">
+          <table className="resource-list">
+            <tr>
+              <th>
+
+              </th>
+              <th>Resource</th>
+              <th>Website</th>
+              <th>Street</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Zip Code</th>
+              <th>Contact</th>
+              <th>Notes</th>
+              <th>Category</th>
+              <th>Subcategory</th>
+              
+            </tr>
+            {resourceItemsList}
+          </table>
+        </container>
       </div>
     );
   }
