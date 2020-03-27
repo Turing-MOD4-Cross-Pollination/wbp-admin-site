@@ -1,4 +1,4 @@
-const baseUrl = 'https://stormy-depths-45174.herokuapp.com/resources';
+const baseUrl = 'https://cors-anywhere.herokuapp.com/https://stormy-depths-45174.herokuapp.com/resources';
 
 export const getAllData = () => {
   const query = `query {resources { id, name, website,street, city, state, zip_code, contact, notes, category, subcategory }}`;
