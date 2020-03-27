@@ -42,8 +42,6 @@ class App extends Component {
     }
     let menuClass = this.state.isMenuOpen ? 'menu-toggle-open':'menu-toggle' 
 
-
-
     return (
       <div className='App'>
         <header className='App-header'>
@@ -54,7 +52,7 @@ class App extends Component {
         </header>
         <div className="App-form">
         <div className="image-container">
-          <img src={plus} alt="menu toggle" className={menuClass} onClick={()=>{this.toggleIsMenuOpen()}}/>
+          <img src={plus} alt="menu toggle button" className={menuClass} onClick={()=>{this.toggleIsMenuOpen()}}/>
         </div>
           <div>
             {isMenuOpen && <ResourceForm />}

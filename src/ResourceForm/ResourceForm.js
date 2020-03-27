@@ -7,6 +7,7 @@ class ResourceForm extends Component {
     this.state = {
       name: '',
       website: '',
+      phoneNumber:'',
       street: '',
       city: '',
       state: '',
@@ -26,6 +27,7 @@ class ResourceForm extends Component {
     const {
       name,
       website,
+      phoneNumber,
       street,
       city,
       state,
@@ -37,32 +39,55 @@ class ResourceForm extends Component {
     } = this.state;
     return (
       <>
-        <form
-          acceptCharset='UTF-8'
-          autoComplete='off'
-        >
-          <label htmlFor='name'>Name</label>
-          <input name='name' type='text' value={name} onChange={this.handleChange} required/>
-          <label htmlFor='website'>Website</label>
-          <input name='website' type='text' value={website} onChange={this.handleChange}/>
-          <label htmlFor='street'>Street</label>
-          <input name='street' type='text' value={street} onChange={this.handleChange}/>
-          <label htmlFor='city'>City</label>
-          <input name='city' type='text' value={city} onChange={this.handleChange}/>
-          <label htmlFor='state'>State</label>
-          <input name='state' type='text' value={state} onChange={this.handleChange}/>
-          <label htmlFor='zipCode'>Zip Code</label>
-          <input name='zipCode' type='text' value={zipCode} onChange={this.handleChange}/>
-          <label htmlFor='contact'>Contact</label>
-          <input name='contact' type='text' value={contact} onChange={this.handleChange}/>
-          <label htmlFor='notes'>Notes</label>
-          <input name='notes' type='text' value={notes} onChange={this.handleChange}/>
-          <label htmlFor='category'>Category</label>
-          <input name='category' type='text' value={category} onChange={this.handleChange} required/>
-          <label htmlFor='subcategory'>Subcategory</label>
-          <input name='subcategory' type='text' value={subcategory} onChange={this.handleChange}/>
+        <form acceptCharset='UTF-8'autoComplete='off' className="new-resource-form">
+          <div className="form-left">
+            <div className="flex-row">
+              <label htmlFor='name' hidden>Resource</label>
+              <input name='name' type='text' value={name} placeholder="Resource Name" onChange={this.handleChange} required/>
+            </div>
+            <div className="flex-row">
+              <label htmlFor='website' hidden>Website</label>
+              <input name='website' type='text' value={website} placeholder="Website" onChange={this.handleChange}/>
+            </div>
+            <div className="flex-row">
+              <label htmlFor='phoneNumber' hidden>Phone Number</label>
+              <input name='phnoeNumber' type='text' value={website} placeholder="Phone Number" onChange={this.handleChange}/>
+            </div>
+          </div>
+          <div className='address-block form-center'>
+            <div className="flex-row">
+            <label htmlFor='street' className="street" hidden>Street</label>
+            <input name='street' type='text' className="input-street" value={street} placeholder="Street Address" onChange={this.handleChange}/>
+            </div>
+            <div className="city-state-zip flex-row">
+              <label htmlFor='city' className="city" hidden>City</label>
+              <input name='city' type='text' className="input-city" value={city} placeholder="City"onChange={this.handleChange}/>
+              <label htmlFor='state' hidden>State</label>
+              <input name='state' type='text' className="input-state"value={state} placeholder="State"onChange={this.handleChange}/>
+              <label htmlFor='zipCode' hidden>Zip Code</label>
+              <input name='zipCode' type='text' className="input-zip" value={zipCode} placeholder="Zip Code" onChange={this.handleChange}/>
+            </div>
+          </div>
+          <div className="form-right">
+            <div className="flex-row">
+              <label htmlFor='contact' hidden>Contact</label>
+              <input name='contact' type='text' value={contact} placeholder="Contact" onChange={this.handleChange}/>
+            </div>
+            <div className="flex-row">
+            <label htmlFor='category' hidden>Category</label>
+            <input name='category' type='text' value={category} placeholder="Category" onChange={this.handleChange} required/>
+            </div>
+            <div className="flex-row">
+            <label htmlFor='subcategory' hidden>Subcategory</label>
+            <input name='subcategory' type='text' value={subcategory} placeholder="Subcategory" onChange={this.handleChange}/>
+            </div>
+          </div>
+          <div className="form-bottom">
+            <label htmlFor='notes' hidden >Notes</label>
+            <input name='notes' type='text' value={notes} placeholder="Notes" className="input-notes" onChange={this.handleChange}/>
+          </div>
         </form>
-        <button>Save</button>
+        <button type="button">Save</button>
       </>
     );
   }
