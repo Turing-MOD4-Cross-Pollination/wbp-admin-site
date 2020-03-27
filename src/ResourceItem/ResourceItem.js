@@ -2,8 +2,7 @@ import React from 'react';
 import './ResourceItem.css';
 
 export default ({resource}) => {
-  console.log(resource)
-  const {name, website,street,city,state,zip_code,contact,notes,category,subcategory} = resource;
+  const {id, name, website,street,city,state,zip_code,contact,notes,category,subcategory} = resource;
 return (
   <tr>
     <td>
