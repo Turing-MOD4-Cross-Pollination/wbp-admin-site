@@ -62,7 +62,7 @@ class App extends Component {
             {isMenuOpen && <ResourceForm />}
           </div>
         </div>
-        <container className="container-table">
+        <div className="container-table">
           <table className="resource-list">
             <tr>
               <th>
@@ -82,7 +82,7 @@ class App extends Component {
             </tr>
             {resourceItemsList}
           </table>
-        </container>
+        </div>
       </div>
     );
   }
